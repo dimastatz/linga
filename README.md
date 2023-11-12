@@ -49,6 +49,12 @@ The project encompasses the following key components:
 
 5. Assessment System - Create assessments to evaluate reading comprehension and retention.
 
+
+## MVP
+Linga MVP is an open source Python library that contains functionality for creating and assessing Comics 
+and assessing customers understanding that read the comics. Here are milestones:
+1. Create
+
 ## How To
 [TBD](/README.mdREADME.md)
 
