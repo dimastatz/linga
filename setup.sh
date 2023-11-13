@@ -24,6 +24,15 @@ elif [ $1 = "-local" ]; then
     black linga tests
     pylint --fail-under=9.9 linga tests
     pytest --cov-fail-under=95 --cov linga -v tests
+elif [ $1 = "-test" ]; then
+    trap 'abort' 0
+    set -e
+    
+    echo "Running format, linter and tests"
+    source .venv/bin/activate
+    black linga tests
+    pylint --fail-under=9.9 linga tests
+    pytest --cov-fail-under=95 --cov linga -v tests
 fi
 
 trap : 0
