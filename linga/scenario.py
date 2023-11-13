@@ -9,4 +9,3 @@ class Levels(Enum):
 
 def create_comics(level: Levels, pages: int) -> str:
     return ""
-

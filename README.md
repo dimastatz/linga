@@ -53,7 +53,10 @@ The project encompasses the following key components:
 ## MVP
 Linga MVP is an open source Python library that contains functionality for creating and assessing Comics 
 and assessing customers understanding that read the comics. Here are milestones:
-1. Create
+1. Create Comics
+2. Create Assesment
+3. Deploy as package to pip
+
 
 ## How To
 [TBD](/README.mdREADME.md)
