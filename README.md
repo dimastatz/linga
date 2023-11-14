@@ -12,7 +12,7 @@
 </br>
 </br>
 <kbd>
-<img src="./docs/images/plato_1.png"> 
+<img src="./docs/images/linga.png"> 
 </kbd>
 </div>
 
