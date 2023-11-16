@@ -12,4 +12,4 @@ def test_create_comics():
 def test_create_scenario():
     """tests basic script"""
     scenario = create_senario("history", Levels.BEGINNER, 7)
-    assert scenario == []
+    assert not scenario
