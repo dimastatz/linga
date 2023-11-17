@@ -1,5 +1,7 @@
 """ generates comics scenarious """
 from enum import Enum
+from PIL import Image
+import requests
 
 
 class Levels(Enum):
@@ -8,6 +10,16 @@ class Levels(Enum):
     BEGINNER = 1
     MEDIUM = 2
     ADVANCED = 3
+
+
+def create_image(description: str, bearer: str) -> Image:
+    """create image by description"""
+    url = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
+    headers = {"Authorization": f"Bearer {bearer}"}
+    response = requests.post(
+        url, headers=headers, json={"inputs": description}, timeout=120
+    )
+    return response.content
 
 
 def create_senario(topic: str, level: Levels, pages: int) -> list:
