@@ -1,6 +1,8 @@
 """ generates comics scenarious """
+import io
 from enum import Enum
 from PIL import Image
+
 import requests
 
 
@@ -19,7 +21,7 @@ def create_image(description: str, bearer: str) -> Image:
     response = requests.post(
         url, headers=headers, json={"inputs": description}, timeout=120
     )
-    return response.content
+    return Image.open(io.BytesIO(response.content))
 
 
 def create_scenario(topic: str, level: Levels, pages: int) -> list:
