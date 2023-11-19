@@ -22,7 +22,7 @@ def create_image(description: str, bearer: str) -> Image:
     return response.content
 
 
-def create_senario(topic: str, level: Levels, pages: int) -> list:
+def create_scenario(topic: str, level: Levels, pages: int) -> list:
     """creates scenario by using chat_gpt and returns list of pages"""
     prompt = f"{topic} {level} {pages}"
     assert prompt
@@ -31,6 +31,6 @@ def create_senario(topic: str, level: Levels, pages: int) -> list:
 
 def create_comics(topic: str, level: Levels, pages: int) -> list:
     """creates comics with"""
-    pages_list = create_senario(topic, level, pages)
+    pages_list = create_scenario(topic, level, pages)
     assert len(pages_list) == 0
     return f"{topic} {level} {pages}"
