@@ -7,3 +7,4 @@ pytest-cov==4.1.0
 streamlit==1.28.2
 langchain==0.0.335
 pylint-fail-under==0.3.0
+streamlit_drawable_canvas==0.9.3
