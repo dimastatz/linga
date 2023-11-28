@@ -53,7 +53,7 @@ The project encompasses the following key components:
   <tr>
     <td><img src="./docs/images/architecture.png"/></td>
   </tr>
-  <tr><td align="center">Hierarchy of the Sciences</td></tr>
+  <tr><td align="center">Linga</td></tr>
 </table>  
 
 
