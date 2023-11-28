@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas</h1>
+
+<canvas id="myCanvas" style="border:1px solid grey;"></canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx=canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+
+ctx.font="30px Comic Sans MS";
+ctx.fillStyle = "red";
+ctx.textAlign = "center";
+ctx.fillText("Hello World", canvas.width/2, canvas.height/2);
+
+</script>
+
+</body>
+</html>
