@@ -49,6 +49,13 @@ The project encompasses the following key components:
 
 5. Assessment System - Create assessments to evaluate reading comprehension and retention.
 
+<table width="256px">
+  <tr>
+    <td><img src="./docs/images/architecture.png"/></td>
+  </tr>
+  <tr><td align="center">Hierarchy of the Sciences</td></tr>
+</table>  
+
 
 ## MVP
 Linga MVP is an open source Python library that contains functionality for creating and assessing Comics 
