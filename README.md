@@ -16,7 +16,7 @@ Presenting Linga, a revolutionary SAAS that harnesses the power of Speech-to-Tex
 # Linga - English Learning through Comic-based AI
 
 ## Summary
-The proposed project aims to develop Linga, a Software as a Service (SAAS) platform that facilitates English language learning through interactive comics. Linga leverages Generative AI to create tailored comics based on students' proficiency level and interests. It provides assistance in pronunciation, vocabulary acquisition, and offers assessments to gauge learning progress. The platform will dynamically adjust text complexity, ensuring a gradual and effective learning experience.
+Linga, an innovative Software as a Service (SAAS), presents a transformative solution for TOEFL/IELTS/Cambridge C1&C2 tests preparation through cutting-edge Automatic Speech Recognition (ASR) technology. Linga automates language learning by providing instant feedback, personalized practice sessions, and an adaptive curriculum, streamlining the path to English proficiency. This platform revolutionizes English Tests preparation, offering a user-friendly interface and the convenience of anytime, anywhere learning. Linga is poised to redefine language education, making test readiness efficient, effective, and accessible for learners worldwide.
 
 ## Background
 Stephen Krashen's Input Hypothesis proposes that language acquisition occurs when learners are exposed to comprehensible input slightly beyond their current proficiency level, emphasizing the importance of meaningful and contextually relevant content. For instance, introducing children to a new language through materials aligned with their interests, while gradually increasing the language complexity, can be an engaging and effective approach.
