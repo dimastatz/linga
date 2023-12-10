@@ -2,7 +2,7 @@
 <h1 align="center"> Linga </h1> 
 <h3>English Learning through Comic-based AI</br></h3>
 <h4 align="center">
-Presenting Linga, a revolutionary SAAS that harnesses the power of [ASR technology](https://en.wikipedia.org/wiki/Speech_recognition) for comprehensive IELTS/TOEFL/Cambridge C1&C2 tests preparation. Elevate your language proficiency through dynamic conversations, receive instant feedback, and benefit from an adaptive curriculum tailored to your progress. With a user-friendly interface, Linga covers all facets of the english exams, allowing you to practice and improve your skills anytime, anywhere. Transform your language preparation with Linga for a personalized, efficient, and enjoyable journey to English proficiency.
+Presenting Linga, a revolutionary SAAS that harnesses the power of <a href="https://en.wikipedia.org/wiki/Speech_recognition">ASR technology</a> for comprehensive IELTS/TOEFL/Cambridge C1&C2 tests preparation. Elevate your language proficiency through dynamic conversations, receive instant feedback, and benefit from an adaptive curriculum tailored to your progress. With a user-friendly interface, Linga covers all facets of the english exams, allowing you to practice and improve your skills anytime, anywhere. Transform your language preparation with Linga for a personalized, efficient, and enjoyable journey to English proficiency.
 </h4>
 <img src="https://img.shields.io/badge/Progress-1%25-red"> <img src="https://img.shields.io/badge/Feedback-Welcome-green">
 </br>
@@ -13,7 +13,7 @@ Presenting Linga, a revolutionary SAAS that harnesses the power of [ASR technolo
 </div>tus
 
 
-# Linga: Redefining Language Education with ASR Technology
+# Linga: Language Education with ASR Technology
 
 ## Summary
 Linga, an innovative Software as a Service (SAAS), presents a transformative solution for TOEFL/IELTS/Cambridge C1&C2 tests preparation through cutting-edge Automatic Speech Recognition (ASR) technology. Linga automates language learning by providing instant feedback, personalized practice sessions, and an adaptive curriculum, streamlining the path to English proficiency. This platform revolutionizes English Tests preparation, offering a user-friendly interface and the convenience of anytime, anywhere learning. Linga is poised to redefine language education, making test readiness efficient, effective, and accessible for learners worldwide.
