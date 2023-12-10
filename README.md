@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center"> Linga </h1> 
-<h3>English Learning through Comic-based AI</br></h3>
+<h3>Language Education with ASR Technology</br></h3>
 <h4 align="center">
 Presenting Linga, a revolutionary SAAS that harnesses the power of <a href="https://en.wikipedia.org/wiki/Speech_recognition">ASR technology</a> for comprehensive IELTS/TOEFL/Cambridge C1&C2 tests preparation. Elevate your language proficiency through dynamic conversations, receive instant feedback, and benefit from an adaptive curriculum tailored to your progress. With a user-friendly interface, Linga covers all facets of the english exams, allowing you to practice and improve your skills anytime, anywhere. Transform your language preparation with Linga for a personalized, efficient, and enjoyable journey to English proficiency.
 </h4>
@@ -10,7 +10,7 @@ Presenting Linga, a revolutionary SAAS that harnesses the power of <a href="http
 <kbd>
 <img src="./docs/images/linga.png"> 
 </kbd>
-</div>tus
+</div>
 
 
 # Linga: Language Education with ASR Technology
