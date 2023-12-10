@@ -2,11 +2,7 @@
 <h1 align="center"> Linga </h1> 
 <h3>English Learning through Comic-based AI</br></h3>
 <h4 align="center">
-🚀 Exciting News! Introducing Linga, a SAAS platform revolutionizing English language learning through interactive comics. 📚🗣️ Powered by Generative AI, Linga tailors content to each student's proficiency and interests, aiding in pronunciation and vocabulary acquisition. Assessments track progress for a personalized learning journey. 🌟 #LanguageLearning #EdTechInnovation
-
-🧠💡 Did you know? The Input Hypothesis by Stephen Krashen highlights the power of contextually relevant content just beyond one's proficiency level in language acquisition. Linga embraces this approach, making learning engaging and effective! 📖✨ #InnovativeEducation #LanguageAcquisition
-
-🎨🖼️ Studies show that visual engagement aids in memory retention and contextual understanding of language. With Generative AI, Linga maximizes these benefits, paving the way for efficient language acquisition in children. 🧒🌐 #VisualLearning #FutureOfEducation #GenerativeAI
+Presenting Linga, a revolutionary SAAS that harnesses the power of Speech-to-Text technology for comprehensive IELTS/TOEFL/Cambridge C1&C2 tests preparation. Elevate your language proficiency through dynamic conversations, receive instant feedback, and benefit from an adaptive curriculum tailored to your progress. With a user-friendly interface, Linga covers all facets of the english exams, allowing you to practice and improve your skills anytime, anywhere. Transform your language preparation with Linga for a personalized, efficient, and enjoyable journey to English proficiency.
 </h4>
 <img src="https://img.shields.io/badge/Progress-1%25-red"> <img src="https://img.shields.io/badge/Feedback-Welcome-green">
 </br>
