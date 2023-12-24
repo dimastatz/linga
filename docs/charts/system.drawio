@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="8UqbCgdwGdvPNjnhkF_A" name="Page-1">
-        <mxGraphModel dx="918" dy="539" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1064" dy="844" grid="1" gridSize="2" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -179,10 +179,60 @@
         </mxGraphModel>
     </diagram>
     <diagram id="cbqd5s1GZcaHpOVikUrP" name="Page-2">
-        <mxGraphModel dx="918" dy="539" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1064" dy="1440" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+                <mxCell id="vPOswsGPAuj8WCk30cXA-1" value="Objectives:&lt;br&gt;1. Fluency&lt;br&gt;2. Vocabruary&lt;br&gt;3. Correctness&lt;br&gt;4. Pronaunciation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Comic Sans MS;fontStyle=2" vertex="1" parent="1">
+                    <mxGeometry x="24" y="20" width="335" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="w7KTgrSJBJ2vmeB093aq-1" value="Whisper" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+                    <mxGeometry x="105" y="515" width="94" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="w7KTgrSJBJ2vmeB093aq-2" value="Facade" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+                    <mxGeometry x="265" y="515" width="94" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="w7KTgrSJBJ2vmeB093aq-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="515" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="w7KTgrSJBJ2vmeB093aq-4" value="Mobile&lt;br&gt;App" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="515" width="94" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="q4E5hwFy4--fev4a_rMv-1" value="Assesments&lt;br&gt;Result" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=3.9192657470703125;sketch=1;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+                    <mxGeometry x="245" y="650" width="98" height="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="lPr2SGckqPRl6qi5iT-4-1" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="w7KTgrSJBJ2vmeB093aq-4" target="w7KTgrSJBJ2vmeB093aq-2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="585" y="720" as="sourcePoint"/>
+                        <mxPoint x="455" y="605" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lPr2SGckqPRl6qi5iT-4-2" value="" style="endArrow=classic;html=1;sketch=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="w7KTgrSJBJ2vmeB093aq-3" target="w7KTgrSJBJ2vmeB093aq-4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="595" y="710" as="sourcePoint"/>
+                        <mxPoint x="645" y="660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lPr2SGckqPRl6qi5iT-4-3" value="Assesments&lt;br&gt;Repositroy" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=3.9192657470703125;sketch=1;fontFamily=Comic Sans MS;" vertex="1" parent="1">
+                    <mxGeometry x="95" y="645" width="98" height="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="lPr2SGckqPRl6qi5iT-4-4" value="" style="endArrow=classic;html=1;sketch=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="w7KTgrSJBJ2vmeB093aq-2" target="lPr2SGckqPRl6qi5iT-4-3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="465" y="845" as="sourcePoint"/>
+                        <mxPoint x="515" y="795" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lPr2SGckqPRl6qi5iT-4-5" value="GetExam" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="lPr2SGckqPRl6qi5iT-4-4">
+                    <mxGeometry x="0.2821" y="-3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lPr2SGckqPRl6qi5iT-4-6" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;FacadeAPI&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. GetTopicList(academic, traveling, imigration)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. GetExamByTopic(topic)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. SubmitExam(context)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4. GetAnalytics(examId)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Comic Sans MS;fontStyle=2" vertex="1" parent="1">
+                    <mxGeometry x="428" y="-2" width="285" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="lPr2SGckqPRl6qi5iT-4-9" value="Open Questions:&lt;br&gt;1. Text To Speach ?&lt;br&gt;2. Speaker Gender&lt;br&gt;3. Context of Exam to scroll back&lt;br&gt;4.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Comic Sans MS;fontStyle=2;fontColor=#00CC00;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="160" width="335" height="135" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
