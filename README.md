@@ -29,7 +29,7 @@ Linga, our innovative Software as a Service (SAAS), utilizes cutting-edge Automa
 ## Scope
 Linga essentially operates through two streams: a content generation flow and an exam simulator mode.
 - Content Generation Flow
-<table width="256px">
+<table width="128px">
   <tr>
     <td><img src="./docs/images/content-generation.png"/></td>
   </tr>
