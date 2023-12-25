@@ -23,7 +23,7 @@ Linga, an innovative Software as a Service (SAAS), presents a transformative sol
 
 
 ## Objectives
-Linga, our innovative Software as a Service (SAAS), utilizes cutting-edge Automatic Speech Recognition (ASR) technology to simulate the interview process for TOEFL, IELTS, and Cambridge C1 & C2 tests. The objectives include enhancing exam readiness, personalizing learning pathways, providing real-time feedback, ensuring a user-friendly interface, and maintaining scalability through continuous technological innovation. Linga aims to revolutionize English language exam preparation by offering a dynamic, adaptive and cost effective solution for students worldwide.
+Linga, our innovative Software as a Service (SAAS), utilizes cutting-edge Automatic Speech Recognition (ASR) technology to simulate the interview process for [TOEFL](https://en.wikipedia.org/wiki/Test_of_English_as_a_Foreign_Language), [IELTS](https://ielts.org/), and [Cambridge C1 & C2](https://www.cambridgeenglish.org/exams-and-tests/advanced/) tests. The objectives include enhancing exam readiness, personalizing learning pathways, providing real-time feedback, ensuring a user-friendly interface, and maintaining scalability through continuous technological innovation. Linga aims to revolutionize English language exam preparation by offering a dynamic, adaptive and cost effective solution for students worldwide.
   
 
 ## Scope
