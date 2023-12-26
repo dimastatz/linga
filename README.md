@@ -37,7 +37,12 @@ Linga essentially operates through two streams: a content generation flow and an
 </table>  
 
 - Exam Simulator Mode
-[TBD]()
+<table width="128px">
+  <tr>
+    <td><img src="./docs/images/exam-simulation.png"/></td>
+  </tr>
+  <tr><td align="center">Linga - Exam Simulation Mode</td></tr>
+</table>  
 
 
 ## MVP
