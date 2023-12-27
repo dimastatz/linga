@@ -36,3 +36,8 @@ def create_comics(topic: str, level: Levels, pages: int) -> list:
     pages_list = create_scenario(topic, level, pages)
     assert len(pages_list) == 0
     return f"{topic} {level} {pages}"
+
+
+def run_transcribe(fpath: str) -> str:
+    """runs simple file transcription"""
+    return fpath

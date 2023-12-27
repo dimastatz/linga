@@ -1,6 +1,7 @@
 """ test scenario module """
 import PIL
 import pytest
+from linga.scenario import run_transcribe
 from linga.scenario import create_comics, Levels
 from linga.scenario import create_scenario, create_image
 
@@ -22,3 +23,9 @@ def test_create_scenario():
     """tests basic script"""
     scenario = create_scenario("history", Levels.BEGINNER, 7)
     assert not scenario
+
+
+def test_run_scenario():
+    """tests basic script"""
+    transcribed = run_transcribe("")
+    assert not transcribed
