@@ -3,6 +3,7 @@ import io
 from enum import Enum
 from PIL import Image
 
+import whisper
 import requests
 
 
@@ -40,4 +41,6 @@ def create_comics(topic: str, level: Levels, pages: int) -> list:
 
 def run_transcribe(fpath: str) -> str:
     """runs simple file transcription"""
-    return fpath
+    model = whisper.load_model("base")
+    result = model.transcribe(fpath)
+    return result["text"]

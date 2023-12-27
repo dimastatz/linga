@@ -1,4 +1,5 @@
 """ test scenario module """
+import os
 import PIL
 import pytest
 from linga.scenario import run_transcribe
@@ -27,5 +28,9 @@ def test_create_scenario():
 
 def test_run_scenario():
     """tests basic script"""
-    transcribed = run_transcribe("")
-    assert not transcribed
+    path = os.getcwd() + "/tests/resources/sample-4.mp3"
+    expected = (
+        " or was of heaven mine. Thus was then she."
+        + " What as-be said Sarah, as to Lady for better, very stob."
+    )
+    assert run_transcribe(path) == expected
