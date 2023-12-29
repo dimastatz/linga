@@ -1,3 +1,3 @@
-function testFunction() {
+function testFunction(button) {
     alert("checked");
   }
