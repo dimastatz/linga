@@ -1,4 +1,5 @@
 //API to handle audio recording 
+
 var audioRecorder = {
     /** Stores the recorded audio as Blob objects of audio data as the recording continues*/
     audioBlobs: [],/*of type Blob[]*/
