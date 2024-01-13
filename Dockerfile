@@ -20,4 +20,4 @@ RUN pylint --fail-under=9.9 linga tests
 RUN pytest --cov-fail-under=95 --cov linga -v tests
 
 ENTRYPOINT ["python3"]
-CMD ["./smarti/app.py" ]
+CMD ["./linga/app.py" ]
