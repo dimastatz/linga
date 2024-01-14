@@ -8,3 +8,9 @@ app = Flask(__name__, "/static")
 def get_canvas():
     """return static content"""
     return app.send_static_file("index.html")
+
+
+@app.route("/transcribe", methods = ['POST'])
+def transcribe():
+    """return static content"""
+    return "Transcription finished", 200
