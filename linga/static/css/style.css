@@ -102,6 +102,19 @@
         -moz-animation-iteration-count: infinite;
         -o-animation-iteration-count: infinite;
     }
+
+    textarea {
+        
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #dbeef2;
+        font-size: 16px;
+        resize: none;
+    }
+
     /* The animation code */
     @keyframes flashing-recording-dot {
         0% {
