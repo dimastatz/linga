@@ -207,7 +207,10 @@ function playAudio(recorderAudioAsBlob) {
         //store the base64 URL that represents the URL of the recording audio
         let base64URL = e.target.result;
 
-        alert(recorderAudioAsBlob.type);
+        // transcribe
+        const text_transcribed = document.getElementById("text_transcribed");
+        text_transcribed.textContent = recorderAudioAsBlob.type;
+       
 
         //If this is the first audio playing, create a source element
         //as pre populating the HTML with a source of empty src causes error

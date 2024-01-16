@@ -10,7 +10,7 @@ def get_canvas():
     return app.send_static_file("index.html")
 
 
-@app.route("/transcribe", methods = ['POST'])
+@app.route("/transcribe", methods=["POST"])
 def transcribe():
     """return static content"""
     return "Transcription finished", 200
