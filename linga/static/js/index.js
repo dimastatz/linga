@@ -210,7 +210,8 @@ function playAudio(recorderAudioAsBlob) {
         // transcribe
         const text_transcribed = document.getElementById("text_transcribed");
         text_transcribed.textContent = recorderAudioAsBlob.type;
-       
+        const response = fetch("http://localhost:5000/transcribe", {method: "POST"});
+        text_transcribed.textContent = response.json();
 
         //If this is the first audio playing, create a source element
         //as pre populating the HTML with a source of empty src causes error
