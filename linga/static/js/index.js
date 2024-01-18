@@ -165,6 +165,8 @@ function stopAudioRecording() {
     //stop the recording using the audio recording API
     audioRecorder.stop()
         .then(audioAsblob => {
+            // transcribe 
+            showText(audioAsblob);
             //Play recorder audio
             playAudio(audioAsblob);
 
@@ -198,7 +200,6 @@ function cancelAudioRecording() {
  * @param {Blob} recorderAudioAsBlob - recorded audio as a Blob Object 
 */
 function playAudio(recorderAudioAsBlob) {
-
     //read content of files (Blobs) asynchronously
     let reader = new FileReader();
 
@@ -210,24 +211,7 @@ function playAudio(recorderAudioAsBlob) {
         // transcribe
         const text_transcribed = document.getElementById("text_transcribed");
         text_transcribed.textContent = recorderAudioAsBlob.type;
-        
-        const formData = new FormData();
-        formData.append('file', recorderAudioAsBlob);
-
-        fetch('/transcription', {
-            method: 'POST',
-            body: formData
-        })
-            .then(response => response.text())
-            .then(data => {
-                console.log('File uploaded successfully:', data);
-                text_transcribed.textContent = response.json();
-            })
-            .catch(error => {
-                console.error('Error uploading file:', error);
-            });
-        
-            
+             
         //If this is the first audio playing, create a source element
         //as pre populating the HTML with a source of empty src causes error
         if (!audioElementSource) //if its not defined create it (happens first time only)
@@ -255,6 +239,26 @@ function playAudio(recorderAudioAsBlob) {
     //read content and convert it to a URL (base64)
     reader.readAsDataURL(recorderAudioAsBlob);
 }
+
+function showText(blob){
+    const formData = new FormData();
+    formData.append('file', blob);
+
+    fetch('/transcribe', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log('File uploaded successfully:', data);
+        text_transcribed.textContent = data;
+    })
+    .catch(error => {
+        console.error('Error uploading file:', error);
+        text_transcribed.textContent = error;
+    });
+}
+
 
 /** Computes the elapsed recording time since the moment the function is called in the format h:m:s*/
 function handleElapsedRecordingTime() {
