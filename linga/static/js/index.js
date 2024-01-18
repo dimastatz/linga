@@ -210,9 +210,24 @@ function playAudio(recorderAudioAsBlob) {
         // transcribe
         const text_transcribed = document.getElementById("text_transcribed");
         text_transcribed.textContent = recorderAudioAsBlob.type;
-        const response = fetch("http://localhost:5000/transcribe", {method: "POST"});
-        text_transcribed.textContent = response.json();
+        
+        const formData = new FormData();
+        formData.append('file', recorderAudioAsBlob);
 
+        fetch('/transcription', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.text())
+            .then(data => {
+                console.log('File uploaded successfully:', data);
+                text_transcribed.textContent = response.json();
+            })
+            .catch(error => {
+                console.error('Error uploading file:', error);
+            });
+        
+            
         //If this is the first audio playing, create a source element
         //as pre populating the HTML with a source of empty src causes error
         if (!audioElementSource) //if its not defined create it (happens first time only)
