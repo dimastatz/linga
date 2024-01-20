@@ -1,5 +1,7 @@
 """ flask app """
 from flask import Flask
+from scenario import run_transcribe
+
 
 app = Flask(__name__, "/static")
 
@@ -13,4 +15,8 @@ def get_canvas():
 @app.route("/transcribe", methods=["POST"])
 def transcribe():
     """return static content"""
-    return "Transcription finished", 200
+    try:
+        res = run_transcribe('')
+        return res, 500
+    except Exception as e:
+        return "Transcription failed", 500
