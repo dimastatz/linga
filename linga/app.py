@@ -23,7 +23,6 @@ def transcribe():
         logging.info(f"file path{fd}, {path}")
         os.write(fd, f.stream)
         os.close(fd)
-
         
         return f"{f.filename} {path}", 200
     except Exception as e:
