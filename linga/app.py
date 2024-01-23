@@ -1,6 +1,7 @@
 """ flask app """
 import logging
-import tempfile, os
+import traceback
+import tempfile
 from flask import Flask, request
 from linga.scenario import run_transcribe
 
@@ -21,10 +22,10 @@ def transcribe():
         f = request.files['file']
         fd, path = tempfile.mkstemp()
         logging.info(f"file path{fd}, {path}")
-        os.write(fd, f.stream)
-        os.close(fd)
+        f.save(path)
+        text = run_transcribe(path)
         
-        return f"{f.filename} {path}", 200
+        return text, 200
     except Exception as e:
-        logging.error(e)
+        logging.error(traceback.format_exc())
         return f"Transcription failed {e}", 500
