@@ -40,6 +40,7 @@ var audioRecorder = {
                     audioRecorder.mediaRecorder.addEventListener("dataavailable", event => {
                         //store audio Blob object
                         audioRecorder.audioBlobs.push(event.data);
+                        console.log("blob pushed");
                     });
 
                     //start the recording by calling the start method on the media recorder
