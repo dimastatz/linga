@@ -3,6 +3,7 @@ import logging
 import traceback
 import tempfile, os
 from flask import Flask, request
+from flask_socketio import SocketIO, emit, join_room
 from linga.scenario import run_transcribe
 
 
@@ -19,10 +20,10 @@ def get_canvas():
 def transcribe():
     """return static content"""
     try:
-        f = request.files['file']
-        fd, path = tempfile.mkstemp()
-        logging.info(f"file path{fd}, {path}")
-        f.save(path)
+        file = request.files['file']
+        filed, path = tempfile.mkstemp()
+        logging.info(f"file path{filed}, {path}")
+        file.save(path)
 
         text = run_transcribe(path), 200
         os.remove(path)
@@ -30,3 +31,23 @@ def transcribe():
     except Exception as e:
         logging.error(traceback.format_exc())
         return f"Transcription failed {e}", 500
+
+
+@socketio.on('join')
+def join(message):
+    """join chat room"""
+    username = message['username']
+    room = message['room']
+    join_room(room)
+    print('RoomEvent: {} has joined the room {}\n'.format(username, room))
+    emit('ready', {username: username}, to=room, skip_sid=request.sid)
+
+
+@socketio.on('data')
+def transfer_data(message):
+    """transfer message"""
+    username = message['username']
+    room = message['room']
+    data = message['data']
+    print('DataEvent: {} has sent the data:\n {}\n'.format(username, data))
+    emit('data', data, to=room, skip_sid=request.sid)
