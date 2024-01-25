@@ -9,6 +9,7 @@ from linga.scenario import run_transcribe
 
 
 app = Flask(__name__, "/static")
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 
 @app.route("/")
