@@ -63,3 +63,4 @@ def default_error_handler(error):
     """error handler"""
     logging.info("Error: %s", error)
     socketio.stop()
+
