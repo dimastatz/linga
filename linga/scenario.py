@@ -50,6 +50,6 @@ def run_transcribe(fpath: str) -> str:
 def run_transcribe_segment(buffer: bytes) -> str:
     """perform in memory transcription"""
     model = whisper.load_model("base")
-    audio = np.frombuffer(buffer, np.int16).astype(np.float32)
+    audio = np.frombuffer(buffer, np.int16).astype(np.float32) / 32768.0
     result = model.transcribe(audio)
     return result["text"]
