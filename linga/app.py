@@ -30,13 +30,13 @@ def transcribe():
         text = run_transcribe(path), 200
         os.remove(path)
         return text
-    except Exception as error: # pylint: disable=W0718
+    except Exception as error:  # pylint: disable=W0718
         logging.error(traceback.format_exc())
         return f"Transcription failed {error}", 500
 
 
 # pylint: disable=E0602
-@socketio.on("join") 
+@socketio.on("join")
 def join(message):
     """join chat room"""
     username = message["username"]
@@ -63,4 +63,3 @@ def default_error_handler(error):
     """error handler"""
     logging.info("Error: %s", error)
     socketio.stop()
-

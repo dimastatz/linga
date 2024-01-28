@@ -1,6 +1,7 @@
 """ generates comics scenarious """
 import io
 from enum import Enum
+import numpy as np
 from PIL import Image
 
 import whisper
@@ -43,4 +44,12 @@ def run_transcribe(fpath: str) -> str:
     """runs simple file transcription"""
     model = whisper.load_model("base")
     result = model.transcribe(fpath)
+    return result["text"]
+
+
+def run_transcribe_segment(buffer: bytes) -> str:
+    """perform in memory transcription"""
+    model = whisper.load_model("base")
+    audio = np.frombuffer(buffer, np.int16).astype(np.float32)
+    result = model.transcribe(audio)
     return result["text"]

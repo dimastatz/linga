@@ -2,9 +2,9 @@
 import os
 import PIL
 import pytest
-from linga.scenario import run_transcribe
 from linga.scenario import create_comics, Levels
 from linga.scenario import create_scenario, create_image
+from linga.scenario import run_transcribe, run_transcribe_segment
 
 
 def test_create_image():
@@ -26,11 +26,26 @@ def test_create_scenario():
     assert not scenario
 
 
-def test_run_scenario():
-    """tests basic script"""
+def test_run_transcribe():
+    """test transcribe"""
     path = os.getcwd() + "/tests/resources/sample-4.mp3"
     expected = (
         " or was of heaven mine. Thus was then she."
         + " What as-be said Sarah, as to Lady for better, very stob."
     )
     assert run_transcribe(path) == expected
+
+
+def test_run_transcribe_segment():
+    """test transcribe chunks"""
+    path = os.getcwd() + "/tests/resources/sample-4.mp3"
+
+    expected = (
+        " or was of heaven mine. Thus was then she."
+        + " What as-be said Sarah, as to Lady for better, very stob."
+    )
+
+    with open(path, "rb") as file:
+        buffer = file.read()
+
+    assert run_transcribe_segment(buffer) == expected
