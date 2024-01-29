@@ -48,9 +48,11 @@ def test_run_transcribe_segment():
 
     logging.info("mp3_lenght %s", len(buffer))
 
+    transcribe = run_transcribe_segment()
+
     while len(buffer) > 0:
         chunk = buffer[0:50000]
         buffer = buffer[50000:]
-        result = run_transcribe_segment(chunk)
+        result = transcribe(chunk)
         logging.info(result)
         assert len(result) > 0

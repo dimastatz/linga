@@ -47,8 +47,12 @@ def run_transcribe(fpath: str) -> str:
     return result["text"]
 
 
-def run_transcribe_segment(buffer: np.ndarray) -> str:
+def run_transcribe_segment() -> str:
     """perform in memory transcription"""
     model = whisper.load_model("base")
-    result = model.transcribe(buffer)
-    return result["text"]
+
+    def transcribe(buffer: np.ndarray):
+        result = model.transcribe(buffer)
+        return result["text"]
+
+    return transcribe
