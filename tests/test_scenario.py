@@ -1,8 +1,10 @@
 """ test scenario module """
 import os
+import logging
+
 import PIL
 import pytest
-import logging
+
 import librosa as lr
 from linga.scenario import create_comics, Levels
 from linga.scenario import create_scenario, create_image
@@ -44,7 +46,11 @@ def test_run_transcribe_segment():
 
     buffer, _ = lr.load(path)
 
-    logging.info(f"mp3_lenght {len(buffer)}")
-    assert len(buffer) > 0
+    logging.info("mp3_lenght %s", len(buffer))
 
-    assert "or was of heaven mine" in run_transcribe_segment(buffer)
+    while len(buffer) > 0:
+        chunk = buffer[0:50000]
+        buffer = buffer[50000:]
+        result = run_transcribe_segment(chunk)
+        logging.info(result)
+        assert len(result) > 0

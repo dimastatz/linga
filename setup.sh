@@ -32,7 +32,7 @@ elif [ $1 = "-test" ]; then
     source .venv/bin/activate
     black linga tests
     pylint --fail-under=9.9 linga tests
-    pytest --cov-fail-under=95 --cov linga -v tests
+    pytest --cov-fail-under=95 --cov --log-cli-level=INFO linga -v tests
 elif [ $1 = "-docker" ]; then
     echo "Building and running docker image"
     docker stop linga-container
