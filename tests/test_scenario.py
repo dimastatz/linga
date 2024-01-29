@@ -2,6 +2,7 @@
 import os
 import PIL
 import pytest
+import logging
 import librosa as lr
 from linga.scenario import create_comics, Levels
 from linga.scenario import create_scenario, create_image
@@ -42,4 +43,8 @@ def test_run_transcribe_segment():
     path = os.getcwd() + "/tests/resources/sample-4.mp3"
 
     buffer, _ = lr.load(path)
+
+    logging.info(f"mp3_lenght {len(buffer)}")
+    assert len(buffer) > 0
+
     assert "or was of heaven mine" in run_transcribe_segment(buffer)
