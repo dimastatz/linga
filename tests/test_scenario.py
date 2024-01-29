@@ -1,6 +1,7 @@
 """ test scenario module """
 import os
 import logging
+from time import time
 
 import PIL
 import pytest
@@ -37,7 +38,12 @@ def test_run_transcribe():
         " or was of heaven mine. Thus was then she."
         + " What as-be said Sarah, as to Lady for better, very stob."
     )
-    assert run_transcribe(path) == expected
+
+    start = time()
+    result = run_transcribe(path)
+    logging.info("time: %s, result: %s", time() - start, result)
+
+    assert result == expected
 
 
 def test_run_transcribe_segment():
@@ -53,6 +59,7 @@ def test_run_transcribe_segment():
     while len(buffer) > 0:
         chunk = buffer[0:50000]
         buffer = buffer[50000:]
+        start = time()
         result = transcribe(chunk)
-        logging.info(result)
+        logging.info("time: %s, result: %s", time() - start, result)
         assert len(result) > 0
