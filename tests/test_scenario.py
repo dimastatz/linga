@@ -7,6 +7,7 @@ import PIL
 import pytest
 
 import librosa as lr
+import linga.fast_transcribe as ft
 from linga.scenario import create_comics, Levels
 from linga.scenario import create_scenario, create_image
 from linga.scenario import run_transcribe, run_transcribe_segment
@@ -61,5 +62,22 @@ def test_run_transcribe_segment():
         buffer = buffer[50000:]
         start = time()
         result = transcribe(chunk)
+        logging.info("time: %s, result: %s", time() - start, result)
+        assert len(result) > 0
+
+
+def test_run_fast_transcribe_segment():
+    """test transcribe chunks"""
+    path = os.getcwd() + "/tests/resources/sample-4.mp3"
+
+    buffer, _ = lr.load(path)
+
+    logging.info("mp3_lenght %s", len(buffer))
+
+    while len(buffer) > 0:
+        chunk = buffer[0:50000]
+        buffer = buffer[50000:]
+        start = time()
+        result = ft.transcribe(chunk)
         logging.info("time: %s, result: %s", time() - start, result)
         assert len(result) > 0
